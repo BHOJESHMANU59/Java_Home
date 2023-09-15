@@ -1,0 +1,33 @@
+package com.sy;
+
+import java.util.Arrays;
+
+public class MainPro {
+
+	public static void main(String[] args) {
+		int[] a= {1,0,1};
+		System.out.println(Arrays.toString(a));
+		for(int i=0;i<a.length;i++)
+		{
+			a[i]=a[(a[i]+3)%a.length];
+		}
+		System.out.print(Arrays.toString(a));
+		
+		 char c='a';
+		int b=20;
+		System.out.println(c+b);
+		
+		int x=5;
+		x*=(2+8);
+		System.out.println(x);
+		
+		
+		
+		
+		
+	}
+	public void display()
+	{
+		System.out.println("Hello");
+	}
+}

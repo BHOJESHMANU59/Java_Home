@@ -1,0 +1,23 @@
+package com.sy;
+
+public class MainPro1 {
+
+    public static void main(String[] args) {
+        int count = 0;
+        for (int n = 1; n <= 100; n++) {
+            int rev = 0;
+            int n1 = n;
+            int temp = n; // Store the original value of n
+            while (temp > 0) {
+                int rem = temp % 10;
+                rev = (rev * 10) + rem;
+                temp = temp / 10;
+            }
+            if (n1 == rev) {
+                count++;
+            }
+        }
+
+        System.out.println(count);
+    }
+}

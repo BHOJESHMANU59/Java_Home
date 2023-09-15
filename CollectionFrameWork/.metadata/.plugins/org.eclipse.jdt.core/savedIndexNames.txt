@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+C:\Users\LENOVO\Documents\JAVA_HOME\CollectionFrameWork\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2075746406.index
+2510609146.index
+260120481.index
+2786787694.index
+129926492.index
