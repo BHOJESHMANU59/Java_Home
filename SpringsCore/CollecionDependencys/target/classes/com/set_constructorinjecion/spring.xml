@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Value as Element -->
+	<bean name="con" class="com.set_constructorinjecion.Country">
+		<constructor-arg>
+			<value>Cs123</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>India</value>
+		</constructor-arg>
+		<constructor-arg>
+			<set>
+				<value>Karnataka</value>
+				<value>TamilNadu</value>
+				<value>AP</value>
+			</set>
+
+		</constructor-arg>
+	</bean>
+
+	<!-- Value as Attribute -->
+	<bean name="con1" class="com.set_constructorinjecion.Country">
+		<constructor-arg value="Cs456"></constructor-arg>
+		<constructor-arg value="America"></constructor-arg>
+		<constructor-arg value="Alabama,Idaho,Maryland"></constructor-arg>
+	</bean>
+
+	<!--Value as Using C-Schema -->
+	<bean name="con2" class="com.set_constructorinjecion.Country"
+		c:code="Cs890" c:name="Australia" c:states="South Wales,Victoria,Tasmania"></bean>
+
+
+
+
+
+</beans>

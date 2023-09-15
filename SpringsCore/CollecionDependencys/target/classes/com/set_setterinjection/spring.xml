@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean name="mob" class="com.set_setterinjection.Mobile">
+    <property name="id">
+    <value>1</value>
+    </property>
+    <property name="name">
+    <value>Redmi 10 Pro</value>
+    </property>
+    <property name="sims">
+    <set>
+    <value>Jio</value>
+    <value>Aritel</value>
+    </set>
+    </property>
+    </bean>
+    
+    <bean name="mob1" class="com.set_setterinjection.Mobile">
+    <property name="id" value="2"></property>
+    <property name="name" value="Nokia"></property>
+    <property name="sims" value="VI,Idea"></property>
+     
+    </bean>
+    
+    <bean name="mob2" class="com.set_setterinjection.Mobile" p:id="3" p:name="Samsung" p:sims="Aritel,Jio,VI">
+    
+    </bean>
+    </beans>

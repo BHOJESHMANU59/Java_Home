@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Value as Element -->
+	<bean name="emp" class="com.map_constructorinjection.Employee">
+		<constructor-arg>
+			<map>
+				<entry>
+					<key>
+						<value>1</value>
+					</key>
+					<value>Manu</value>
+				</entry>
+				<entry>
+					<key>
+						<value>2</value>
+					</key>
+					<value>Rakesh</value>
+				</entry>
+				
+			</map>
+		</constructor-arg>
+		<constructor-arg>
+			<value>8000.00</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- Value as Attribute -->
+	<bean name="emp1" class="com.map_constructorinjection.Employee">
+		<constructor-arg>
+			<map>
+				<entry key="3">
+					<value>Harish</value>
+				</entry>
+			</map>
+		</constructor-arg>
+		<constructor-arg value="85000.00"></constructor-arg>
+	</bean>
+
+	<!--Value as Using C-Schema -->
+	<bean name="emp2" class="com.map_constructorinjection.Employee"
+		c:sal="75000.00">
+		<constructor-arg>
+			<map>
+				<entry key="4" value="Yash"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+
+
+
+
+</beans>

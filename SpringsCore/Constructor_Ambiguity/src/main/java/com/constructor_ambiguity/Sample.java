@@ -1,0 +1,26 @@
+package com.constructor_ambiguity;
+
+public class Sample 
+{
+	
+	public Sample()
+	{
+		System.out.println("Empty Constructor");
+	}
+	public Sample(int a,int b)
+	{
+		System.out.println("Sum of a and b :"+a+b);
+		System.out.println(a+"  "+b);
+	}
+	
+	public Sample(double c,double d)
+	{
+		System.out.println(c+"   "+d);
+	}
+	
+	public Sample(String s1,String s2)
+	{
+		System.out.println(s1+"  "+s2);
+	}
+
+}

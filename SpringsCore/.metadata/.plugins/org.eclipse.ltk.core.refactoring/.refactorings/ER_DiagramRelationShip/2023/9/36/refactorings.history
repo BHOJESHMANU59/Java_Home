@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.manytoone.vehicle&apos; to &apos;Vehicle&apos;&#x0D;&#x0A;- Original project: &apos;ER_DiagramRelationShip&apos;&#x0D;&#x0A;- Original element: &apos;com.manytoone.vehicle&apos;&#x0D;&#x0A;- Renamed element: &apos;com.manytoone.Vehicle&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;vehicle&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.manytoone{vehicle.java[vehicle" matchStrategy="1" name="Vehicle" qualified="false" references="true" similarDeclarations="false" stamp="1693934322091" textual="false" version="1.0"/>
+</session>

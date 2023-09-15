@@ -1,0 +1,21 @@
+package com.setterinjecion;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext ac=new ClassPathXmlApplicationContext("com/setterinjecion/spring.xml");
+    	Company c1 =(Company) ac.getBean("com");
+    	System.out.println(c1);
+    	
+    	Company c2 =(Company) ac.getBean("com1");
+    	System.out.println(c2);
+    	
+    	Company c3 =(Company) ac.getBean("com2");
+    	System.out.println(c3);
+       
+    }
+}
