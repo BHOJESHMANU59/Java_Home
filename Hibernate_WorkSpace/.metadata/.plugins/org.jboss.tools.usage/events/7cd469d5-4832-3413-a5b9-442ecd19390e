@@ -1,0 +1,11 @@
+#Mon Aug 28 22:09:39 IST 2023
+a=finishWizard
+c=0
+cl=org.hibernate.eclipse.console.wizards.NewConfigurationWizard
+cmp=usage
+ct=jbt
+d=1693240779703
+l=Wizard class name
+s=0
+v=2.3.0
+vl=How many times the 'Finish' button pressed during the day
