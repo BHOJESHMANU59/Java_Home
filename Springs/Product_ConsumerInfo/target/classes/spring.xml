@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean id="cons" class="com.sy.Consumer">
+		<property name="cid" value="1"></property>
+		<property name="cname" value="Srinath"></property>
+	</bean>
+
+	<bean id="pro" class="com.sy.Products">
+		<property name="pid" value="10"></property>
+		<property name="pname" value="Books"></property>
+		<property name="price" value="50.00"></property>
+		<!-- Injecting Consumer Object into Products object using ref tag -->
+		<property name="con" ref="cons"></property>
+		<!-- Injecting Consumer Object into Products object using ref tag -->
+		<property name="producer">
+			<list>
+				<ref bean="prod" />
+				<ref bean="prod1" />
+				<ref bean="prod2" />
+			</list>
+
+		</property>
+
+	</bean>
+
+	<bean id="prod" class="com.sy.Producer">
+		<property name="id" value="101"></property>
+		<property name="name" value="Classmate"></property>
+	</bean>
+
+	<bean id="prod1" class="com.sy.Producer">
+		<property name="id" value="102"></property>
+		<property name="name" value="Divya"></property>
+	</bean>
+
+	<bean id="prod2" class="com.sy.Producer">
+		<property name="id" value="103"></property>
+		<property name="name" value="Natraj"></property>
+	</bean>
+
+
+</beans>

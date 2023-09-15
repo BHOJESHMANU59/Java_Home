@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\Springs\SpringMVCProject1\src\main\java\com\jspiders\controller\MultiplyController.java"/>
+			<item value="D:\Springs\SpringFirstProject\src\main\java\com\sy\SpringFirstProject\repository\StudentRepository.java"/>
+			<item value="D:\Springs\ComponentAnnotation\src\main\java\spring.xml"/>
+			<item value="D:\Springs\InterfaceVehicle\src\main\java\spring.xml"/>
+			<item value="D:\Springs\Employee_Company\src\main\java\com\sy\App.java"/>
+			<item value="D:\Springs\ProductInfo\src\main\java\com\sy\App.java"/>
+			<item value="D:\Springs\SpringsProject1\src\main\java\com\springs\App.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.sy"/>
+			<item value="com.sy.springmvcproject"/>
+			<item value="com.sy.SpringFirstProject"/>
+			<item value="com.sy.StudentInfo"/>
+			<item value="com.sy.Products_CustomersInfo"/>
+			<item value="com.sy.Product_ConsumerInfo"/>
+			<item value="com.sy.ProductInfo"/>
+			<item value="com.springs"/>
+		</list>
+		<list key="groupId">
+			<item value="com.sy"/>
+			<item value="com.springs"/>
+		</list>
+		<list key="artifactId">
+			<item value="RecipientProject"/>
+			<item value="SpringMVCProject1"/>
+			<item value="SpringFirstProject"/>
+			<item value="ComponentAnnotation"/>
+			<item value="InterfaceVehicle"/>
+			<item value="Employee_Company"/>
+			<item value="StudentInfo"/>
+			<item value="Products_CustomersInfo"/>
+			<item value="Product_ConsumerInfo"/>
+			<item value="ProductInfo"/>
+			<item value="SpringsProject1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>
