@@ -1,0 +1,14 @@
+package com.intsa;
+
+public class EvenOrOdd 
+{
+	public static void main(String[] args) {
+		int n=10;
+		if((n/2)*2==n)
+		{
+			System.out.println("Even");
+		}
+		System.out.println("Odd");
+	}
+
+}

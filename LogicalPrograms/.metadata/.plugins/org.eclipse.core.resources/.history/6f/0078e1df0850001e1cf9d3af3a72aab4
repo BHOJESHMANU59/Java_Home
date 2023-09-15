@@ -1,0 +1,27 @@
+package com.logicalPrograms;
+
+// Sum of Odd index , Product of Even Index 
+
+public class SumAndProductOfIndex 
+{
+	public static void main(String[] args) 
+	{
+		int[] a= {1,2,3,4};
+		int o=0;
+		int e=1;
+		for(int i=0;i<a.length;i++)
+		{
+			if(i%2==0)
+			{
+				e=e+a[i];
+			}
+			else
+			{
+				o=o+a[i];
+			}
+		}
+		System.out.println(o);
+		System.out.println(e);
+	}
+
+}

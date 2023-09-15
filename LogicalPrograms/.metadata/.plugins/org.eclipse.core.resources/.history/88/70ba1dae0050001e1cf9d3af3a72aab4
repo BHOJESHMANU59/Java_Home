@@ -1,0 +1,19 @@
+package com.logicalPrograms;
+
+public class LengthWithoutInbuildFun
+{
+	public static void main(String[] args) 
+	{
+		int[] a= {1,2,3,4,5};
+		int length=0;
+		for (int i : a) 
+		{
+			length++;
+		}
+		System.out.println(length);
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,21 @@
+package com.logicalPrograms;
+
+// length of the Array Without using Length() function
+
+public class LengthWithoutInbuildFun
+{
+	public static void main(String[] args) 
+	{
+		int[] a= {0,2};
+		int length=0;
+		for (int i : a) 
+		{
+			length++;
+		}
+		System.out.println(length);
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,22 @@
+package com.arraysprograms;
+// Find Missing Value in Given Array
+
+public class MissingValueInArray 
+{
+	public static void main(String[] args) {
+		int[] a= {1,3,4};
+		int n=a.length;
+		int sum=0;
+		for (int i : a) 
+		{
+			sum=sum+i;	
+		}
+		int SumofN_naturalNo=n*(n+1)/2;
+		int Missing_Value=SumofN_naturalNo-sum;
+		System.out.println(SumofN_naturalNo);
+		System.out.println(sum);
+		System.out.println(Missing_Value);
+	}
+	
+
+}
