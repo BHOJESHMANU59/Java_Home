@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.assignment6.ReversetheStringWordbyWord&apos; to &apos;ReveresString_WordbyWord&apos;&#x0D;&#x0A;- Original project: &apos;Assignments_Java&apos;&#x0D;&#x0A;- Original element: &apos;com.assignment6.ReversetheStringWordbyWord&apos;&#x0D;&#x0A;- Renamed element: &apos;com.assignment6.ReveresString_WordbyWord&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ReversetheStringWordbyWord&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.assignment6{ReversetheStringWordbyWord.java[ReversetheStringWordbyWord" matchStrategy="1" name="ReveresString_WordbyWord" qualified="false" references="true" similarDeclarations="false" stamp="1689856292005" textual="false" version="1.0"/>
+</session>

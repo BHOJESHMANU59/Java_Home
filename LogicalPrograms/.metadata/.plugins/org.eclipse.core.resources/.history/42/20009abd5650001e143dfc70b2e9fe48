@@ -1,0 +1,18 @@
+package com.arraysprograms;
+
+
+// Copy Array Element to Another Array
+
+public class CopyArrayEle 
+{
+	public static void main(String[] args) {
+		int[] a= {1,2,3,5,4};
+		int[] b=new int[a.length];
+		for(int i=0;i<a.length;i++)
+		{
+			b[i]=a[i];
+		}
+		System.out.println(b);
+	}
+
+}

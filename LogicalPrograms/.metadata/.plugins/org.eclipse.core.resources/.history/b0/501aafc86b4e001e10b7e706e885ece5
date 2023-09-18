@@ -1,0 +1,25 @@
+package com.Strings;
+
+// Count Number of Words Present in given String without using length() method
+
+public class CountNo_OfWords 
+{
+	public static void main(String[] args) {
+		String s="";
+		int c=0;
+		if(c==0)
+		{
+			System.out.println(0);
+		}
+		c++;
+		for(char ch:s.toCharArray())
+		{
+			if(ch==' ')
+			{
+				c++;
+			}
+		}
+		System.out.println(c);
+	}
+
+}

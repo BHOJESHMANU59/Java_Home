@@ -1,0 +1,21 @@
+package com.arraysprograms;
+
+import java.util.Iterator;
+
+// Find Greatest Element in the Given Array
+
+public class FindGreastestEle {
+	public static void main(String[] args) {
+		int[] a= {1,3,2,5,4};
+		int g=a[0];
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]>a[i+1])
+			{
+				g=a[i];
+			}
+		}
+		System.out.println(g);
+	}
+
+}
