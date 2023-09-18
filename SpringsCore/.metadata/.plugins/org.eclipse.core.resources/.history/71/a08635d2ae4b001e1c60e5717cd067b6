@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:c="http://www.springframework.org/schema/c"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean name="std1" class="com.onetoone.Student" p:sid="1" p:sname="praful" p:marks="95">
+    </bean>
+    <bean name="std2" class="com.onetoone.Student" p:sid="2" p:sname="kartik" p:marks="85">
+    </bean>
+    <bean name="std3" class="com.onetoone.Student" p:sid="3" p:sname="sourabh" p:marks="75">
+    </bean>
+    <bean name="std4" class="com.onetoone.Student" p:sid="4" p:sname="akash" p:marks="90">
+    </bean>
+    
+    <bean name="branch1" class="com.onetoone.Branch" p:bid="111" p:bname="Electronics">
+    <property name="stds">
+    <list>
+    <ref bean="std1"/>
+    <ref bean="std3"/>
+    </list>
+    </property>
+    </bean>
+    
+    <bean name="branch2" class="com.onetoone.Branch" p:bid="112" p:bname="Computer Science">
+    <property name="stds">
+    <list>
+    <ref bean="std2"/>
+    <ref bean="std4"/>
+    </list>
+    </property>
+    </bean>
+    
+    
+    
+    </beans>

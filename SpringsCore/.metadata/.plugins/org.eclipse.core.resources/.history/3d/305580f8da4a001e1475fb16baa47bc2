@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean name="col" class="com.referencetype_setter.College" p:cid="101" p:cname="GSC">
+    <property name="stds">
+    <list>
+    <bean name="std" class="com.referencetype_setter.Students" p:sid="1" p:sname="Manoj" p:marks="90.89"></bean>
+    <bean name="std1" class="com.referencetype_setter.Students" p:sid="2" p:sname="Harish" p:marks="89.17"></bean>
+    <bean name="std2" class="com.referencetype_setter.Students" p:sid="3" p:sname="Ravi" p:marks="99.78"></bean>
+    </list>
+    
+    </property>
+    </bean>
+
+    </beans>

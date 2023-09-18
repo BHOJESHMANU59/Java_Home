@@ -1,0 +1,10 @@
+INDEX VERSION 1.134+C:\Users\LENOVO\Documents\JAVA_HOME\SpringsCore\.metadata\.plugins\org.eclipse.jdt.core
+1933302673.index
+2601269627.index
+690827465.index
+60878012.index
+2305055233.index
+1368561774.index
+1865797976.index
+891142437.index
+988224133.index

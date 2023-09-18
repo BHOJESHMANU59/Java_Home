@@ -1,0 +1,15 @@
+package com.sy;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext ac=new ClassPathXmlApplicationContext("com/sy/spring.xml");
+    	
+    	Customer c =(Customer) ac.getBean("cust");
+    	System.out.println(c);
+    }
+}

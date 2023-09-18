@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Value as Element -->
+	<bean name="col" class="com.list_constructorinjection.College">
+		<constructor-arg>
+			<value>2001</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>GSC</value>
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>BhojeshManu</value>
+				<value>Srinath</value>
+				<value>Chethan</value>
+			</list>
+
+		</constructor-arg>
+	</bean>
+
+	<!-- Value as Attribute -->
+	<bean name="col1" class="com.list_constructorinjection.College">
+		<constructor-arg value="2002"></constructor-arg>
+		<constructor-arg value="MVJ"></constructor-arg>
+		<constructor-arg value="Manoj,Harish,Rajesh"></constructor-arg>
+	</bean>
+
+	<!--Value as Using C-Schema -->
+	<bean name="col2" class="com.list_constructorinjection.College"
+		c:id="2003" c:name="GJC" c:stds="Shashank,Nihal,Shivu"></bean>
+
+
+
+
+
+</beans>

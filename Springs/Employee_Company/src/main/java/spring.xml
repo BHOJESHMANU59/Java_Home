@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean id="comp" class="com.sy.Company" autowire="byName">
+    <property name="cId" value="2001"></property>
+     <property name="Cname" value="DXC"></property>
+      <property name="address" value="Bangalore"></property>
+     
+    
+    
+    
+    </bean>
+    
+    <bean id="emp" class="com.sy.Employee" scope="prototype">
+		<property name="empId" value="101"></property>
+		<property name="eName" value="Manoj"></property>
+		<property name="sal" value="50000.00"></property>
+	</bean>
+	
+	 <bean id="emp1" class="com.sy.Employee" scope="singleton">
+		<property name="empId" value="102"></property>
+		<property name="eName" value="Srinath"></property>
+		<property name="sal" value="90000.00"></property>
+	</bean>
+	
+	 <bean id="emp2" class="com.sy.Employee">
+		<property name="empId" value="103"></property>
+		<property name="eName" value="Yogesh"></property>
+		<property name="sal" value="91000.00"></property>
+	</bean> 
+    
+</beans>

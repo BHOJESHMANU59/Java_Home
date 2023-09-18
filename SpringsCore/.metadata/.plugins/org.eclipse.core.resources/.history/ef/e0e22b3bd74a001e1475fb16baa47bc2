@@ -1,0 +1,12 @@
+package com.referencetype_constructor;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    }
+}
