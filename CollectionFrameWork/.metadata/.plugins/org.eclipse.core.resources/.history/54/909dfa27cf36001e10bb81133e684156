@@ -1,0 +1,9 @@
+package com.sy;
+
+public class MainPro {
+
+	public static void main(String[] args) {
+		short x=10;
+		System.out.println(x);
+	}
+}
