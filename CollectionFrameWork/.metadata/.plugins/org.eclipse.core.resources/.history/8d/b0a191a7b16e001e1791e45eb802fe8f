@@ -1,0 +1,40 @@
+package com.thread;
+
+public class WaitingState implements Runnable
+{
+	public class DemoWaitingStateRunnable implements Runnable {
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+
+		}
+
+	}
+
+	public static Thread t1;
+
+	@Override
+	public void run() 
+	{
+		 Thread t2 = new Thread(new DemoWaitingStateRunnable());
+	        t2.start();
+
+	        try 
+	        {
+	            t2.join();
+	        } catch (InterruptedException e) 
+	        {
+	            Thread.currentThread().interrupt();
+	            e.printStackTrace();
+	        }
+	    
+	}
+	
+    public static void main(String[] args) 
+	 {
+		 t1 = new Thread(new WaitingState());
+	     t1.start();
+	 }
+
+}

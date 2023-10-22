@@ -1,0 +1,48 @@
+package com.numbers_logics;
+
+// Java Program to check if the given number is even or odd
+//  1) without using modulus operator
+//  2) Without Using if-else Statement
+
+public class EvenOrOdd 
+{
+	public static String check(int n)      
+	{
+		if(n%2==0)                      // Using Modulus Operator
+		{
+			return "Even";
+		}
+		
+		
+		if((n/2)*2==n)
+		{
+			return "Even";
+		}
+		
+		if((n>>1)<<1==n)
+		{
+			return "Even";
+		}
+		
+		if((n&1)==0)
+		{
+			return "Even";
+		}
+		
+		switch(n%2)
+		{
+		case 0: return "Even";
+		case 1: return "Odd";
+		}
+		return "Odd";
+		
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		System.out.println(check(6));
+	}
+
+}

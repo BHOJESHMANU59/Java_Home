@@ -6,19 +6,16 @@ public class StackDS {
 		s.push(10);
 		s.push(20);
 		s.push(30);
-		s.push(40);
+		
 		
 		s.dispaly();
 		
-		System.out.println(s.pop()+" ");
-		System.out.println("--------------------------------");
-		s.dispaly();
-		
+	    System.out.println(s.pop()+" ");	
 		System.out.println(s.peek());
-		System.out.println(s.peek());
-		s.dispaly();
+//		System.out.println(s.peek());
+//		s.dispaly();
 		
-		System.out.println("Element Found At Position : "+s.search(20));
+		System.out.println("Element Found At Position : "+s.search(10));
 		
 		System.out.println("Size Of Stack : "+s.size());
 		

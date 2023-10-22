@@ -1,0 +1,46 @@
+package com.jsp;
+
+import java.util.ArrayList;
+
+public class MinimizeS 
+{
+	public static void main(String[] args) {
+
+        // Step 1: Input
+        int K = 3; // Number of digits in binary numbers
+        int M = 4; // Number of chunks
+
+        // Step 2: Calculate the minimum S
+        int result = calculateMinimumS(K, M);
+
+        // Step 3: Output the result
+        System.out.println(result);
+
+    }
+
+    public static int calculateMinimumS(int K, int M) {
+        int totalOnes = (1 << K) - 1; // Maximum possible sum of 1's in any chunk
+        int chunkSize = totalOnes / M; // Initial chunk size
+        int remainder = totalOnes % M; // Remainder after division
+
+        // Initialize an ArrayList to store the sizes of each chunk
+        ArrayList<Integer> chunkSizes = new ArrayList<>();
+
+        // Distribute the remainder among the first 'remainder' chunks
+        for (int i = 0; i < M; i++) {
+            chunkSizes.add(chunkSize);
+            if (remainder > 0) {
+                chunkSizes.set(i, chunkSizes.get(i) + 1);
+                remainder--;
+            }
+        }
+
+        // Calculate the maximum number of 1's in any chunk (S)
+        int S = 0;
+        for (int a : chunkSizes) {
+            S = Math.max(S, a);
+        }
+
+        return S;
+    }
+}

@@ -169,15 +169,16 @@ public class ArrayDS {
 		ar.add(50);
 		ar.add(10);
 
-		ar.traversal();
-		System.out.println("The given ele found at:"+ar.search(10));
-		ar.search(20);
-		ar.search(30);
-		ar.search(40);
-		ar.search(50);
-		ar.search(60);
-		
+//		ar.traversal();
+//		System.out.println("The given ele found at:"+ar.search(10));
+//		ar.search(20);
+//		ar.search(30);
+//		ar.search(40);
+//		ar.search(50);
+//		ar.search(60);
+//		
 		System.out.println("-------------------------------");
+		ar.remove(20);
 		ar.traversal();
 	}
 }

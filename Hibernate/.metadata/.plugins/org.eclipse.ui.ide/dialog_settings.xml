@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/bhojeshmanu/Documents/Hibernate/Assignment"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/Company_EmployeeJPA"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/CriteriaAPI"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/CriteriaAPI_JPA"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/CrudOparationUsingJPA"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/FirstLevelCache"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/ManyToManyBi"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/ManyToMany_Mapping"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/ManyToOne_Mapping"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/OneToMany_ManyToOne"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/OneToMany_Mapping"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/OneToOneEx2"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/OneToOne_Mapping"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/Person_Details"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/Producer_Consumer_Cache"/>
+			<item value="/home/bhojeshmanu/Documents/Hibernate/SecondLevelCache"/>
+		</list>
+	</section>
+</section>

@@ -1,19 +1,20 @@
 package com.stackds;
 
 public class Dynamic_Stack {
+	Node top;
+	int size;
 	class Node
 	{
 		Object data;
-		Node next;
+//		Node next;
 	    Node prev;
-		Node(Object data)
+	public Node(Object data)
 		{
 			this.data=data;
 		}
 	}
-	Node top;
-	int size;
-	
+
+	// Adding Elements Into Stack
 	public void push(Object data)
 	{
 		Node n=new Node(data);
@@ -41,7 +42,6 @@ public class Dynamic_Stack {
 			Object data=top.data;
 			top=top.prev;
 			size--;
-			System.out.println();
 			return data;
 		}
 		

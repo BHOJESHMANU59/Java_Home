@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.websocket.server.PathParam"/>
+    <fullyQualifiedTypeName name="com.book.exceptions.UserIdNotFOundException"/>
+    <fullyQualifiedTypeName name="com.book.exceptions.UserDetailsNotFoundException"/>
+    <fullyQualifiedTypeName name="com.book.entitys.User"/>
+    <fullyQualifiedTypeName name="com.book.exceptions.UserIdNotFoundException"/>
+    <fullyQualifiedTypeName name="com.book.dto.UserDto"/>
+    <fullyQualifiedTypeName name="com.book.serviceimpl.BookServiceImpl"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="com.book.exceptions.BookNotFoundException"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="com.book.util_response.ResponseStructure"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="com.book.entitys.Book"/>
+    <fullyQualifiedTypeName name="com.book.dto.BookDto"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+    <fullyQualifiedTypeName name="com.book.exceptions.BookIdNotFoundException"/>
+</qualifiedTypeNameHistroy>

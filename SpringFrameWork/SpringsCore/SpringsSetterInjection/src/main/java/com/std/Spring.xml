@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Values As Elements -->
+	<bean name="std" class="com.std.Student">
+		<property name="id">
+			<value>1</value>
+		</property>
+
+		<property name="name">
+			<value>Srinath</value>
+		</property>
+
+		<property name="marks">
+			<value>90.32</value>
+		</property>
+	</bean>
+<!-- =============================================================== -->
+	<!-- Value as Attribute -->
+	<bean name="std1" class="com.std.Student">
+		<property name="id" value="2" />
+		<property name="name" value="Yogesh" />
+		<property name="marks" value="95.78"></property>
+	</bean>
+<!-- =============================================================== -->
+	<!-- Value as P-Schema -->
+	<bean name="std2" class="com.std.Student" p:id="3"
+		p:name="Praful" p:marks="60.19"></bean>
+</beans>

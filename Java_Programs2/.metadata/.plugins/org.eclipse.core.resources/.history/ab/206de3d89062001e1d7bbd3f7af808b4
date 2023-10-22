@@ -1,0 +1,20 @@
+package com.jsp;
+
+import java.util.Scanner;
+
+public class MinimizeS {
+	public static void main(String[] args) {
+		       Scanner scanner = new Scanner(System.in);
+		        int k = scanner.nextInt();
+		        int m = scanner.nextInt();
+		
+		        int maxOnesChunks = m - 1;
+		        int onesPerChunk = (int) Math.pow(2, k) / m;
+		        int remainingOnes = (int) Math.pow(2, k) % m;
+		
+		        int minS = maxOnesChunks * onesPerChunk + remainingOnes;
+		
+		        System.out.println(minS);
+		    }
+
+}

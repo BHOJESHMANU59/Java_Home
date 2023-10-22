@@ -1,0 +1,76 @@
+package com.thread;
+
+public class ThreadLifeCycle implements Runnable
+{
+	public static Thread th1;
+
+	@Override
+	public void run() 
+	{
+		myTask();
+		
+		WaitingState t=new WaitingState();
+		Thread th3=new Thread(t);
+		th3.start();
+		System.out.println("-----------------");
+		System.out.println(th3.getState());
+		System.out.println("-----------------");
+		try {
+			
+			th3.join();
+			
+		} 
+		catch (InterruptedException e)
+		{
+			 Thread.currentThread().interrupt();
+	            e.printStackTrace();
+			
+		}
+		
+		System.out.println(th3.getState());
+		
+	}
+	
+	synchronized public static void myTask()
+	{
+		while(true)
+		{
+			
+		}
+		
+	}
+	public static void main(String[] args) throws InterruptedException {
+		ThreadLifeCycle t=new ThreadLifeCycle();
+		th1=new Thread(t);
+		Thread th2=new Thread(t);
+		System.out.println(th2.getState());
+		th1.start();
+		th2.start();
+		System.out.println(th2.getState());
+		Thread.sleep(1000);
+		System.out.println(th2.getState());
+		
+		
+	}
+	
+
+}
+
+class WaitingState implements Runnable
+{
+
+	@Override
+	public void run() {
+		  try {
+	            Thread.sleep(1000);
+	          } 
+		  catch (InterruptedException e)
+		  {
+	            Thread.currentThread().interrupt();
+	            e.printStackTrace();
+	      }
+		  System.out.println(ThreadLifeCycle.th1.getState());
+	
+	}
+	
+}

@@ -1,0 +1,28 @@
+package com.thread;
+
+public class Terminated_Dead implements Runnable
+{
+
+	@Override
+	public void run() {
+		
+	}
+	
+	public static void main(String[] args) {
+		Terminated_Dead td=new  Terminated_Dead();
+		Thread t=new Thread(td);
+		try 
+		{
+			Thread.sleep(1000);
+			
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		
+		}
+		System.out.println(t.getState());
+	}
+	
+
+}

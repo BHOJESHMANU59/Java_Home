@@ -1,0 +1,23 @@
+package com.files;
+
+import java.io.File;
+import java.util.Arrays;
+
+public class DeleteaFile 
+{
+	public static void main(String[] args) {
+		File f=new File("File.txt");
+		if(f.delete())
+		{
+			 System.out.println("The deleted file is : "
+                     + f.getName());
+		}
+		else
+		{
+			 System.out.println(
+		                "Failed in deleting the file.");
+			
+		}
+	}
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:c="http://www.springframework.org/schema/c"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean name="team" class="com.Collection_dependency.Team" c:teamname="INDIA" c:captainname="Rohit">
+    <constructor-arg>
+    <list>
+    <value>Virat</value>
+    <value>Siraj</value>
+    <value>Surya</value>
+    <value>Hardik</value>
+    <value>DK</value>
+    <value>Shami</value>
+    
+    
+    </list>
+    </constructor-arg>
+    
+    <constructor-arg>
+    <set>
+    <value>Batting coach</value>
+    <value>Bowling coach</value>
+    <value>Fielding coach</value>
+    <value>Batting coach</value>
+    </set>
+    </constructor-arg>
+  
+     </bean>
+    
+    
+	</beans>

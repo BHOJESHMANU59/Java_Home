@@ -1,0 +1,24 @@
+package com.sy;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Customer 
+{
+	@Value("111")
+	private int cid;
+	@Value("Srinath")
+	private String cName;
+	@Value("9740443341")
+	private long phno;
+	@Autowired
+	@Qualifier("savingAccount")
+	private Account account1;
+	@Autowired
+	@Qualifier("currentAccount")
+	private Account account2;
+
+}

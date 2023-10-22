@@ -79,7 +79,7 @@ public class DoublyLinkedList {
 			temp.prev=n;
 			
 			/*
-			    n.next=emp.next;
+			    n.next=temp.next;
 			    n.prev=temp;
 			    temp.next=n;
 			    if(n.next!=null)

@@ -12,6 +12,9 @@ public class DynamicStackDS {
 		ds.dispaly();
 		
 		System.out.println(ds.pop());
+		System.out.println(ds.pop());
+		
+		System.out.println(ds.search(40));
 		
 		ds.dispaly();
 	}

@@ -1,0 +1,26 @@
+package com.files;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+
+public class BufferWritterEx 
+{
+	public static void main(String[] args) {
+		try 
+		{
+			FileWriter f=new FileWriter("Files.java");
+			BufferedWriter bw=new BufferedWriter(f);
+			bw.write("Java Program");
+			bw.close();
+			f.close();
+		    System.out.println("Success");  
+			
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+	}
+
+}

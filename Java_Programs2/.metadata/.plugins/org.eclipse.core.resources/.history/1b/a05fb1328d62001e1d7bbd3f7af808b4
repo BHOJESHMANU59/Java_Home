@@ -1,0 +1,51 @@
+package com.jsp;
+
+import java.util.Scanner;
+
+public class MinimizeS 
+{
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        // Step 1: Input
+	        int K = scanner.nextInt();  // Number of digits in binary numbers
+	        int M = scanner.nextInt();  // Number of chunks
+
+	        // Step 2: Calculate the minimum S
+	        int minimumS = calculateMinimumS(K, M);
+
+	        // Step 3: Output the result
+	        System.out.println(minimumS);
+
+	        scanner.close();
+	    }
+
+	    public static int calculateMinimumS(int K, int M) {
+	        // Step 4: Calculate the total number of 1's in the entire sequence
+	        int totalOnes = (1 << K) - 1;  // Equivalent to 2^K - 1
+
+	        // Step 5: Calculate the initial chunk size and remainder
+	        int initialChunkSize = totalOnes / M;
+	        int remainder = totalOnes % M;
+
+	        // Step 6: Distribute 1's as evenly as possible among the chunks
+	        int[] chunkSizes = new int[M];
+	        for (int i = 0; i < M; i++) {
+	            chunkSizes[i] = initialChunkSize;
+	            if (remainder > 0) {
+	                chunkSizes[i]++;
+	                remainder--;
+	            }
+	        }
+
+	        // Step 7: Find the maximum chunk size (S)
+	        int maximumS = 0;
+	        for (int chunkSize : chunkSizes) {
+	            maximumS = Math.max(maximumS, chunkSize);
+	        }
+
+	        // Step 8: Return the maximum chunk size (S)
+	        return maximumS;
+	    }
+
+}

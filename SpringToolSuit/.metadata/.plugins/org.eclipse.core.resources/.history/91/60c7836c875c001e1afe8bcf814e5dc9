@@ -1,0 +1,10 @@
+package com.book.exceptions;
+
+public class UserIdNotFOundException  extends RuntimeException
+{
+
+	public UserIdNotFOundException(String message) {
+		super(message);
+	}
+
+}

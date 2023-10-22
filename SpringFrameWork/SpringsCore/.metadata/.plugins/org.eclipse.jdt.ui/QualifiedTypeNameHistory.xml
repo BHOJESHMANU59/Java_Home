@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sy.Employee"/>
+    <fullyQualifiedTypeName name="com.std.Student"/>
+    <fullyQualifiedTypeName name="com.sy.Person"/>
+    <fullyQualifiedTypeName name="com.setterinjecion.Company"/>
+    <fullyQualifiedTypeName name="java.lang.StrictMath"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.list_constructorinjection.College"/>
+    <fullyQualifiedTypeName name="com.set_setterinjection.Mobile"/>
+    <fullyQualifiedTypeName name="com.set_constructorinjecion.Country"/>
+    <fullyQualifiedTypeName name="com.map_setterinjection.Student"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.map_constructorinjection.Employee"/>
+    <fullyQualifiedTypeName name="com.referencetype_setter.Students"/>
+    <fullyQualifiedTypeName name="com.referencetype_setter.College"/>
+    <fullyQualifiedTypeName name="com.subject.Subject"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.employee.Employee"/>
+    <fullyQualifiedTypeName name="java.applet.AppletContext"/>
+    <fullyQualifiedTypeName name="com.constructor_ambiguity.Sample"/>
+    <fullyQualifiedTypeName name="com.onetoone.Student"/>
+    <fullyQualifiedTypeName name="com.onetoone.College"/>
+    <fullyQualifiedTypeName name="com.onetomany.Company"/>
+    <fullyQualifiedTypeName name="com.manytoone.Car"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.manytoone.Bike"/>
+    <fullyQualifiedTypeName name="com.sy.Account"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.sy.Customer"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+</qualifiedTypeNameHistroy>

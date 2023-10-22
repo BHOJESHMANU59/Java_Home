@@ -1,0 +1,28 @@
+package com.thread;
+
+public class ThreadLifeCycle implements Runnable
+{
+
+	@Override
+	public void run() {
+		
+	}
+	
+	synchronized public static void myTask()
+	{
+		while(true)
+		{
+			
+		}
+		
+	}
+	public static void main(String[] args) {
+		ThreadLifeCycle t=new ThreadLifeCycle();
+		Thread th=new Thread(t);
+		System.out.println(th.getState());
+		th.start();
+		System.out.println(th.getState());
+	}
+	
+
+}

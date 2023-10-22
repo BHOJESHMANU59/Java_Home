@@ -2,6 +2,8 @@ package com.linkedlist;
 
 
 public class SinglyLinkedList {
+	  Node head;
+	  Node tail;
 	class Node {
 		Object data;
 		Node next;
@@ -10,8 +12,7 @@ public class SinglyLinkedList {
 			this.data = data;
 		}
 	}
-	  Node head;
-	  Node tail;
+	
 	  													
 	public void add(Object data) {
 		Node n = new Node(data);

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean name="com" class="com.setterinjecion.Company">
+    <property name="compId">
+    <value>1001</value>
+    </property>
+    <property name="comName">
+    <value>Wipro</value>
+    </property>
+    <property name="empnames">
+    <list>
+    <value>Srinath</value>
+    <value>Yogesh</value>
+    <value>Bhojesh</value>
+    <value>Vinay</value>
+    </list>
+    </property>
+    </bean>
+    
+    <bean name="com1" class="com.setterinjecion.Company">
+    <property name="compId" value="1002"></property>
+    <property name="comName" value="TCS"></property>
+    <property name="empnames" value="Manoj,Ravi,Raghu"></property>
+     
+    </bean>
+    
+    <bean name="com2" class="com.setterinjecion.Company" p:compId="1003" p:comName="Infosys" p:empnames="Raju,Dhanush,Manu">
+    
+    </bean>
+    
+    
+    </beans>

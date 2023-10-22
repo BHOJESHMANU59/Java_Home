@@ -1,0 +1,17 @@
+package com.thread;
+
+public class ThreadLifeCycle implements Runnable
+{
+
+	@Override
+	public void run() {
+		
+	}
+	public static void main(String[] args) {
+		ThreadLifeCycle t=new ThreadLifeCycle();
+		Thread th=new Thread(t);
+		System.out.println(th.getState());
+	}
+	
+
+}

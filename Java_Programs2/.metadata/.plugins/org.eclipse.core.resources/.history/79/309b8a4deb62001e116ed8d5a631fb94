@@ -1,0 +1,43 @@
+package com.intsa;
+
+class Demo
+{
+
+	public static void display()
+	{
+		System.out.println("Display Static Method");
+	}
+	
+	public void check()
+	{
+		System.out.println("Non Static Check Method");
+	}
+}
+
+public class Sample extends Demo
+{
+//	@Override
+//	public static void display()
+//	{
+//		System.out.println("Display Static Method in Sample Class");
+//	}
+	
+	@Override
+	public void check()
+	{
+		for (int a : ) 
+		{
+			
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		Sample s=new Sample();
+	//	s.display();
+		s.check();
+		
+	}
+
+}
+

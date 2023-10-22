@@ -1,0 +1,22 @@
+package com.thread;
+
+public class Terminated_Dead implements Runnable
+{
+
+	@Override
+	public void run() {
+		
+	}
+	
+	public static void main(String[] args) throws InterruptedException {
+		Terminated_Dead td=new  Terminated_Dead();
+		Thread t=new Thread(td);
+		t.start();
+		Thread.sleep(1000);
+			
+		Assert.assertFalse(t.isAlive());
+		System.out.println(t.getState());
+	}
+	
+
+}

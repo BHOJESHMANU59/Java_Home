@@ -1,0 +1,15 @@
+package com.thread;
+
+public class TestDaemon extends Thread
+{
+	public void run()
+	{
+		System.out.println("Running Thread");
+	}
+	public static void main(String[] args) {
+		TestDaemon t=new TestDaemon();
+		t.start();
+		t.setDaemon(true);
+	}
+
+}

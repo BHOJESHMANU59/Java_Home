@@ -1,0 +1,69 @@
+package com.jsp;
+
+import java.util.Scanner;
+
+public class Question2 {
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Step 1: Input
+        int N = scanner.nextInt(); // Number of notes
+        int[] notes = new int[N];
+
+        for (int i = 0; i < N; i++) {
+            notes[i] = scanner.nextInt();
+        }
+
+        // Step 2: Calculate the minimum number of steps
+        int steps = calculateMinimumSteps(notes);
+
+        // Step 3: Output the result
+        System.out.println(steps);
+
+        scanner.close();
+    }
+
+	public static int calculateMinimumSteps(int[] notes) {
+	    int steps = 0; // Initialize the number of steps to 0
+
+	    // Iterate through the notes to find negative subsequences
+	    for (int i = 0; i < notes.length; i++) {
+	        int subsequenceSum = 0;
+
+	        // Check for negative subsequence starting at note i
+	        for (int j = i; j < notes.length - 1; j++) { // Adjusted the loop boundary
+	            subsequenceSum += notes[j];
+
+	            // If the subsequence sum is negative, perform the operation
+	            if (subsequenceSum < 0) {
+	                int diff = Math.abs(subsequenceSum);
+	                notes[i] += diff; // Add diff to notes[i-1]
+	                notes[j + 1] -= diff; // Subtract diff from notes[j+1]
+	                steps++; // Increment the number of steps
+	            }
+	        }
+	    }
+
+	    // Check if the melody is perfect
+	    if (isPerfectMelody(notes)) {
+	        return steps;
+	    } else {
+	        return -1; // If not perfect, return -1
+	    }
+	}
+
+
+    public static boolean isPerfectMelody(int[] notes) {
+        int sum = 0;
+
+        for (int note : notes) {
+            sum += note;
+            if (sum <= 0) {
+                return false; // If there's a non-positive subsequence, not perfect
+            }
+        }
+
+        return true; // The melody is perfect
+    }
+
+}
